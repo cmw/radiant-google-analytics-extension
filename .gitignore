@@ -1,0 +1,10 @@
+db/*.db
+pkg
+tmp/*
+.DS_Store
+.svn
+TAGS
+spec/datasets/tmp
+*.tmproj
+cache
+.idea

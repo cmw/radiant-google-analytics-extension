@@ -5,7 +5,7 @@ describe 'GoogleAnalytics' do
   
   describe '<r:google_analytics>' do
     it 'should render the correct HTML' do
-      tag = '<r:google_analytics uacct="ID" />'
+      tag = '<r:google_analytics id="ID" />'
       
       expected = %{<script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

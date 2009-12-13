@@ -2,7 +2,7 @@ module GoogleAnalytics
   include Radiant::Taggable
 
 
-  desc "Creates Google Analytics with uacct content"
+  desc "Creates Google Analytics with id content"
   tag "google_analytics" do |tag|
 %{<script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -10,7 +10,7 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
 </script>
 <script type="text/javascript">
 try {
-var pageTracker = _gat._getTracker("#{tag.attr['uacct']}");
+var pageTracker = _gat._getTracker("#{tag.attr['id']}");
 pageTracker._trackPageview();
 } catch(err) {}</script>}
   end

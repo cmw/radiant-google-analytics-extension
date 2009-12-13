@@ -9,6 +9,6 @@ Useful tag to add Google Analytics to your site.
 =Information
 
 * All you want is 'Web Property ID' provided by Google Analytics: UA-XXXXXXX-X.
-* In your Radiant > admin > Layouts > "Normal -or any front-end layout yo made".
-* Insert <r:google_analytics uacct="YOUR_UA-XXXXXXX-X" /> -recomended to insert it after tag.
+* In your Radiant > admin > Layouts > "Normal -or any front-end layout you made".
+* Insert <r:google_analytics id="YOUR_UA-XXXXXXX-X" /> -recomended to insert it after tag.
 

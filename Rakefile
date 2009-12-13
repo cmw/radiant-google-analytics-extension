@@ -24,6 +24,8 @@ require 'rake/testtask'
 rspec_base = File.expand_path(RADIANT_ROOT + '/vendor/plugins/rspec/lib')
 $LOAD_PATH.unshift(rspec_base) if File.exist?(rspec_base)
 require 'spec/rake/spectask'
+require 'cucumber'
+require 'cucumber/rake/task'
 
 # Cleanup the RADIANT_ROOT constant so specs will load the environment
 Object.send(:remove_const, :RADIANT_ROOT)
@@ -64,6 +66,14 @@ namespace :spec do
     end
   end
   
+  desc "Run the Cucumber features"
+  Cucumber::Rake::Task.new(:integration) do |t|
+    t.fork = true
+    t.cucumber_opts = ['--format', (ENV['CUCUMBER_FORMAT'] || 'pretty')]
+    # t.feature_pattern = "#{extension_root}/features/**/*.feature"
+    t.profile = "default"
+  end
+
   # Setup specs for stats
   task :statsetup do
     require 'code_statistics'

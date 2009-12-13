@@ -4,7 +4,7 @@
 class GoogleAnalyticsExtension < Radiant::Extension
   version "1.0"
   description "Nothing. Just a Google Analytics code generater for Radiant CMS"
-  url "https://github.com/amrnt/radiant-google-analytics"
+  url "http://github.com/amrnt/radiant-google-analytics-extension"
   
   # define_routes do |map|
   #   map.namespace :admin, :member => { :remove => :get } do |admin|

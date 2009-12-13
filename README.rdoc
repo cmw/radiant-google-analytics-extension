@@ -1,14 +1,16 @@
 =Radiant Google Analytics
 
-Useful tag to add Google Analytics to your site.
+Useful tag to add Google Analytics Code to your site.
 
 =Installation
- 
+
+In your Radiant appication folder, run:
+
    ./script/extension install google_analytics
 
 =Information
 
 * All you want is 'Web Property ID' provided by Google Analytics: UA-XXXXXXX-X.
 * In your Radiant > admin > Layouts > "Normal -or any front-end layout you made".
-* Insert <r:google_analytics id="YOUR_UA-XXXXXXX-X" /> -recomended to insert it after &lt;/body&gt; tag.
+* Insert <r:google_analytics id="YOUR_UA-XXXXXXX-X" /> -recomended to insert it after </body> tag.
 

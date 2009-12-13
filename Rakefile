@@ -66,13 +66,6 @@ namespace :spec do
     end
   end
   
-  desc "Run the Cucumber features"
-  Cucumber::Rake::Task.new(:integration) do |t|
-    t.fork = true
-    t.cucumber_opts = ['--format', (ENV['CUCUMBER_FORMAT'] || 'pretty')]
-    t.profile = "default"
-  end
-
   # Setup specs for stats
   task :statsetup do
     require 'code_statistics'

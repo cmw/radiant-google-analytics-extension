@@ -20,6 +20,10 @@ If you want to track your website that has many subdomain all you want to make s
 
   <r:google_analytics id="YOUR_UA-XXXXXXX-X" type="m" domain="mydomain.com" /> 
 
+If you want to track your website that has multi level domains, like mydomain.com, mydomain.pc, mydomain.co.uk
+
+  <r:google_analytics id="YOUR_UA-XXXXXXX-X" type="ml" /> 
+
 =Notice
 
 This extension is totally random and for fun. It works, but sometime copy and paste your Google Analytics manually could be easier!

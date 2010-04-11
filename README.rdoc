@@ -14,3 +14,12 @@ In your Radiant appication folder, run:
 * In your Radiant > admin > Layouts > "Normal -or any front-end layout you made".
 * Insert <r:google_analytics id="YOUR_UA-XXXXXXX-X" /> -recomended to insert it after </body> tag.
 
+=Extra
+
+If you want to track your website that has many subdomain all you want to make sure you set 'type' attribute as 'm' and domain attribute for your domain.
+
+  <r:google_analytics id="YOUR_UA-XXXXXXX-X" type="m" domain="mydomain.com" /> 
+
+=Notice
+
+This extension is totally random and for fun. It works, but sometime copy and paste your Google Analytics manually could be easier!
